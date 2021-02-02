@@ -12,7 +12,7 @@ alphrhofg   = 1e2;   % Pa/m
 %numerics
 nx          = 100;
 ny          = fix(nx*Ly/Lx);
-nout        = 100;
+nout        = 10;
 nt          = 100*nout;
 %preprocessing
 dx          = Lx/(nx-1);
