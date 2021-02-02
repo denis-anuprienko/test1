@@ -30,6 +30,7 @@ T(:,end)    = -deltaT/2;
 %action
 for it = 1:nt   
     % Hydro
+    coef_x              = (P(1:end-1,:) + P(2:end,:))/2;
     qx                  = - k_eta * diff(Pf,1,1)/dx;
     qy                  = - k_eta * diff(Pf,1,1)/dx;
     
